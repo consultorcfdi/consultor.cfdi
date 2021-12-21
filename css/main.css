@@ -10,3 +10,7 @@ body{font-family: 'Titillium Web', sans-serif;}
 header{
     margin-top: 100px;
 }
+
+aside{ 
+    background: url(../img/data_center.jpg) no-repeat;
+}

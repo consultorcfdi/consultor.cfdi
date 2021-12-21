@@ -124,7 +124,7 @@
             <div class="info-right">
                <h2>lore 4   </h2>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi esse animi asperiores voluptates? Laborum obcaecati voluptatibus maxime dicta consectetur nihil sint voluptates labore cumque quidem, placeat eaque nostrum aliquam provident!</p>
-                <a href="http://" class="btn btn-outline-secondary btn-lg">boton 2</a>
+                <a href="http://" class="btn btn-outline-secondary btn-lg header-btn">boton 2</a>
             </div>
         </div>    
 
@@ -156,26 +156,25 @@
     </div>
 </section>
 
-<footer id="contact">
 
+<!-- Seccion aside -->
+<div class="container">
+<aside id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-               <form action="" class="card">
+               <form action="https://formsubmit.co/consultor.cfdi@gmail.com" method="POST" class="card my-4">
                <div class="card-body mt-2">
                    <label for="contact"><h3>Contacto</h3></label>
+                   <p>Comparet tus inquietudes con nosotros</p>
                 <div class="form-gorup">
-                    <input type="text" placeholder="name" class="form-control">
-
+                    <input type="text" placeholder="name" name="nombre" class="form-control">
                 </div>
                 <div class="form-gorup mt-2">
-                    <input type="email" placeholder="e-mail" class="form-control">
-
+                    <input type="email" placeholder="e-mail" name="Correo" class="form-control">
                 </div>
-
                 <div class="form-gorup mt-2">
-                    <textarea rows="10" cols="30" placeholder="mensaje" class="form-control"> 
-
+                    <textarea rows="10" cols="30" placeholder="mensaje" name="mensaje" class="form-control"> 
                     </textarea>
                 </div>
                 <button type="submit" class="btn btn-outline-secondary mt-2 " >Enviar </button>    
@@ -185,10 +184,8 @@
             </div>
         </div>
     </div>
-
-
-
-</footer>
+</aside>
+</div>
 
 
 
@@ -199,7 +196,46 @@
 <!-- bootstrap js -->
 
 
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar',
+    {duration:2000,
+    origin:'bottom'})
 
+    window.sr = ScrollReveal();
+    sr.reveal('.header-content-left',
+    {duration:2000,
+    origin:'top',
+    distance: '300px'})
+
+    window.sr = ScrollReveal();
+    sr.reveal('.header-content-right',
+    {duration:2000,
+    origin:'right',
+    distance: '300px'})
+
+    // window.sr = ScrollReveal();
+    // sr.reveal('.header-btn',
+    // {duration:2000,
+    // origin:'bottom',
+    // distance: '300px'
+    // delay: '1000'})
+
+// aqui comienza el scrip del scroll
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// aqui termina el scrip del scroll
+
+</script>
 
 
 
