@@ -41,16 +41,16 @@
   
 <!-- navbar -->
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top my-10"">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Consultor CFDI</a>
+          <a class="navbar-brand" href="#header">Consultor CFDI</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="#header">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#prod">Productos</a>
@@ -59,7 +59,7 @@
                 <a class="nav-link" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"href="#">Nosotros </a>
+                <a class="nav-link"href="#contact">Contacto </a>
               </li>
             </ul>
           </div>
@@ -68,9 +68,9 @@
 </div>
 <!-- navbar -->
 
-<header id="header">
+<header id="header" class="my-10" style="border: 3px;">
 
-    <div class="container mt-5" >
+    <div class="container mt-5 my-auto" >
 
         <div class="row">
             <div class="col-md-6">
@@ -84,10 +84,19 @@
         
             <div class="col-md-6">
                 <div class="header-content-right">
-                <h1 class="display-4">Contabilidad electrónica</h1>
+                <h1 class="display-4">¿Contabilidad electrónica?.....</h1>
 
-                <p "mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident officiis, quos eum voluptate ducimus placeat mollitia explicabo earum distinctio. Aspernatur, aperiam quos. Mollitia voluptates accusamus vero deserunt delectus qui numquam.  </p>
+                <p "mt-5"> La contabilidad electrónica es una obligación para los contribuyentes que consta de generar los registros y asientos contables a través de medios electrónicos y notificar mensualmente los movimientos contable a través del portal del SAT.
 
+                    Para poder cumplir de manera formal y fácil con el ingreso de la información contable mensual y con la nueva versión y sus requerimientos, se deberá enviar la balanza de comprobación con el detalle de los saldos iniciales y finales, asi como con los movimientos del periodo, y el catálogo de cuentas las cuales deben de tener su código agrupador asignado, este catalogo se envia una sola vez y cada vez que se le realicen modificaciones.
+                    
+                    Por otra parte, los contribuyentes y las empresas deben tener la posibilidad de generar de manera electrónica sus pólizas contables y auxiliares para hacérselas llegar al SAT, sólo en caso de que:
+                    <ul>
+                   <li> El SAT pide directamente al contribuyente o a terceros relacionados su información contable.</li>
+                   <li> El contribuyente realice una compensación o bien, solicite una devolución.</li>
+                   <li> Los contribuyentes cuyo régimen pertenece al de “Arrendamiento, Servicios Profesionales e Incorporación Fiscal” quedan relevados del envío de su Contabilidad Electrónica, siempre y cuando lleven el registro de sus operaciones en el módulo de contabilidad de la herramienta electrónica “Mis cuentas”.</li>
+                </ul> Las pólizas del mes presentado, con sus Comprobantes Fiscales Digitales por Internet destacando el uuid y forma de pago, los folios fiscales por medio de un reporte auxiliar solo en caso de que no se pueda enviar los cfdi claramente en las pólizas y auxiliares de cuenta en caso de auditorías por parte del SAT o para presentar solicitudes de compensación y devoluciones.</p>
+                
                 <a href="#" class="btn btn-outline-secondary btn-lg">leer mas</a>
 
             </div>
@@ -164,6 +173,7 @@
         <div class="row">
             <div class="col-md-5">
                <form action="https://formsubmit.co/consultor.cfdi@gmail.com" method="POST" class="card my-4">
+                <input type="hidden" name="_captcha" value="false">
                <div class="card-body mt-2">
                    <label for="contact"><h3>Contacto</h3></label>
                    <p>Comparet tus inquietudes con nosotros</p>
