@@ -1,7 +1,7 @@
 body{font-family: 'Titillium Web', sans-serif; background: rgb(215, 250, 252);}
 
 #prod{
-    background: rgba(230, 245, 247, 0.96);
+    background: skyblue;
     padding: 50px 0 30px 0;
     text-align: center;
      margin-top: 40px;
@@ -10,7 +10,7 @@ body{font-family: 'Titillium Web', sans-serif; background: rgb(215, 250, 252);}
 header{
     /* position: fixed; */
     /* margin-top: 10px; */
-    /* background-color: gray; */
+    background-color:skyblue;
     margin-left: -8PX;
     padding: 50px;
     margin-top: 70PX;
@@ -22,4 +22,9 @@ header{
 
 aside{ 
     background: url(../img/data_center.jpg) no-repeat;
+}
+
+footer{
+
+    background-color:skyblue;
 }
